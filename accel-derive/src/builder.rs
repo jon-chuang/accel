@@ -26,7 +26,7 @@ impl CheckRun for Command {
         if !output.status.success() {
             println!("{}", std::str::from_utf8(&output.stdout)?);
             eprintln!("{}", std::str::from_utf8(&output.stderr)?);
-            bail!("External command failed: {:?}", self);
+            bail!("External command failed: {:?}", format!("{:?} with output:\n{:?}", self, std::str::from_utf8(&output.stdout)?));
         }
         Ok(())
     }

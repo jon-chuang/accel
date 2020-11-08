@@ -41,11 +41,11 @@ pub fn generate(item: TokenStream) -> TokenStream {
                         ),*
                     {
                         let grid = grid.into();
-                        println!("Launching kernel");
-                        println!("Grid: {:?} {:?} {:?}",
-                        grid.x,
-                        grid.y,
-                        grid.z,);
+                        // println!("Launching kernel");
+                        // println!("Grid: {:?} {:?} {:?}",
+                        // grid.x,
+                        // grid.y,
+                        // grid.z,);
                         let block = block.into();
                         println!("Block: {:?} {:?} {:?}",
                         block.x,
