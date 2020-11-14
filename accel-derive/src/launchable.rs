@@ -47,10 +47,10 @@ pub fn generate(item: TokenStream) -> TokenStream {
                         // grid.y,
                         // grid.z,);
                         let block = block.into();
-                        println!("Block: {:?} {:?} {:?}",
-                        block.x,
-                        block.y,
-                        block.z,);
+                        // println!("Block: {:?} {:?} {:?}",
+                        // block.x,
+                        // block.y,
+                        // block.z,);
                         let kernel = self.get_kernel()?;
                         let mut args = [#(#args_value.as_kernel_parameter()),*];
                         unsafe {
